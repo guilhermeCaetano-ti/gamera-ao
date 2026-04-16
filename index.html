@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rato Robô vs Gatos Alados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 Rato Robô vs 🐱 Gatos Alados</h1>
+            <div class="controls-info">
+                <p><strong>W</strong> Pular | <strong>A</strong> Esquerda | <strong>D</strong> Direita | <strong>S</strong> Agachar | <strong>ESPAÇO</strong> Atirar 🧀</p>
+            </div>
+        </div>
+        
+        <div class="game-wrapper">
+            <canvas id="gameCanvas" width="1200" height="600"></canvas>
+            
+            <div id="gameOverScreen" class="game-over-screen hidden">
+                <div class="game-over-content">
+                    <h2 id="gameOverTitle">GAME OVER</h2>
+                    <p id="gameOverMessage">Você foi derrotado!</p>
+                    <button id="restartBtn" class="restart-button">Reiniciar Jogo</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hud">
+            <div class="hud-section">
+                <span class="hud-label">VIDA:</span>
+                <div id="healthDisplay" class="health-display"></div>
+            </div>
+            <div class="hud-section">
+                <span class="hud-label">INIMIGOS:</span>
+                <span id="enemyCount" class="hud-value">0</span>
+            </div>
+            <div class="hud-section">
+                <span class="hud-label">PONTUAÇÃO:</span>
+                <span id="scoreDisplay" class="hud-value">0</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
